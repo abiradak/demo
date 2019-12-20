@@ -1,0 +1,33 @@
+
+<form [formGroup]="registerform" (ngSubmit)="onRegistrationSubmit()">
+    <div class="form-group">
+      <label for="Name">Name</label>
+      <input type="text" class="form-control" placeholder="Enter Name" formControlName="name" id="email">
+    
+      <label for="pwd">Gender:</label>
+      <div>
+          
+        <input type="radio" value="male" class="form-control" formControlName="gender" id="email">Male
+        <input type="radio" value="female" class="form-control" formControlName="gender" id="email">Female
+      </div> 
+    
+        <label for="pwd">DOB:</label>
+        <input type="date" class="form-control" placeholder="Enter DOB" formControlName="dob" id="pwd">
+   
+        <label for="pwd">Email:</label>
+        <input type="email" class="form-control" placeholder="Enter email" formControlName="email" id="pwd">
+     
+        <label for="pwd">Hobbies:</label>
+        <input type="checkbox" value="a" class="form-control" placeholder="Enter Hobbies"  formControlName="hobbiesa" id="pwd">
+        <input type="checkbox" value="b" class="form-control" placeholder="Enter Hobbies" formControlName="hobbiesb" id="pwd">
+        <input type="checkbox" value="c" class="form-control" placeholder="Enter Hobbies" formControlName="hobbiesc" id="pwd">
+      
+        <label for="pwd">Mobile</label>
+        <input type="text" class="form-control" placeholder="Mobile" formControlName="mobiles" id="pwd">
+      
+        <label for="pwd">Address</label>
+        <input type="text" class="form-control" placeholder="Enter Address" formControlName="addresses" id="pwd">
+      </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
